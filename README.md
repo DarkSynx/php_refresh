@@ -1,5 +1,5 @@
 # php_refresh
-==============
+
 
 I would like my localhost page to refresh when my php code is modified. 
 Well it's possible.  you'll have to  :
