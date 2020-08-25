@@ -5,7 +5,7 @@
 	echo '-- Auto scan project -- ' . PHP_EOL ;
 	
 	global $scantes,$scantab;
-			$xt =  time();
+			$xt =  time() * 1000;
 			$fp = fopen('phprefresh.json', 'w');
 			fwrite($fp, '{"time":"' . $xt .'"}');
 			fclose($fp);	
@@ -20,7 +20,7 @@
 		usleep(1000000);
 		clearstatcache();
 		if($scantes != $scantab){
-			$xt =  time();
+			$xt =  time() * 1000;
 			echo '> Change '  . $xt . PHP_EOL ;
 			$fp = fopen('phprefresh.json', 'w');
 		fwrite($fp, '{"time":"' . $xt .'"}');
